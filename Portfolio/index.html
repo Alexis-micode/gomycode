@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Style pour centrer les sections */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        /* Style pour centrer le contenu de la section home */
+        #home {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style pour centrer la navbar */
+        .navbar {
+            justify-content: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Style pour les autres sections */
+        video, audio {
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alexis-dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#work">Work</a>
+                    <a class="nav-link" href="#resume">Resume</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div> 
+            <img src="alexis-dev.jpg" alt="" srcset="" width="500" height="300">
+        </div>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Découvrez mes projets et compétences.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un passionné.</p>
+        <video width="320" height="240" controls>
+            <source src="didib.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>Mes projets</h2>
+        <ul>
+            <li>Les avantages et le fonctionnement du web - <a href="https://github.com/Alexis-micode/gomycode.git">Voir le projet</a></li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Mon CV</h2>
+        <table>
+            <tr>
+                <th>Expérience</th>
+                <th>Années</th>
+            </tr>
+            <tr>
+                <td>Ventes d'appareil électronique</td>
+                <td>2016 - Présent</td>
+            </tr>
+        </table>
+        <audio controls>
+            <source src="tito.mp3" type="audio/mp3">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="nom" required><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="email" required><br>
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Alexis-dev. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
